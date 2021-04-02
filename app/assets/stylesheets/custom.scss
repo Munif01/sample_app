@@ -105,6 +105,7 @@ footer {
       margin-left: 15px;
     }
   }
+
   /* miscellaneous */
 
   .debug_dump {
@@ -112,6 +113,24 @@ footer {
     float: left;
     width: 100%;
     @include box_sizing;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
   }
 }
 
